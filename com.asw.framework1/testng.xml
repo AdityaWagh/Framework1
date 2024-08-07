@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation" parallel="tests" thread-count="2">
+
+<listeners>
+<listener class-name  = "aa.aa1.Base.CustomListeners"/>
+</listeners>
+<test name="Chrome Browser Tests">
+<parameter name = "environment" value = "${environment}"/>
+<parameter name = "baseurl" value = "https://www.google.com/"/>
+<parameter name = "browsername" value = "Chrome"/>
+<classes>
+<class name="aa.aa1.WebTests.TestforTestContext"/>
+</classes>
+</test>
+<!-- <test name="Edge Browser Tests">
+ <parameter name = "browsername" value = "Edge"/>
+
+<classes>
+<class name="aa.aa1.WebTests.TestHomePage"/>
+
+<class name="aa.aa1.WebTests.TestHomePage2"/>
+</classes>
+</test> -->
+<!-- <test name="API Tests">
+<classes>
+<class name="aa.aa1.API.Tests.TestCustomer"/> 
+</classes>
+</test> -->
+</suite>

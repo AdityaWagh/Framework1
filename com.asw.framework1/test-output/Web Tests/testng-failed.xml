@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Web Tests]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="aa.aa1.Base.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Chrome Browser(failed)">
+    <parameter name="browsername" value="${browsername}"/>
+    <classes>
+      <class name="aa.aa1.WebTests.TestHomePage2">
+        <methods>
+          <include name="TestGmailAboutPageHeader"/>
+          <include name="getGmailHomePage"/>
+        </methods>
+      </class> <!-- aa.aa1.WebTests.TestHomePage2 -->
+    </classes>
+  </test> <!-- Chrome Browser(failed) -->
+</suite> <!-- Failed suite [Web Tests] -->

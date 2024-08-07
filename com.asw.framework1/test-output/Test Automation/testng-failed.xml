@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Test Automation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="aa.aa1.Base.CustomListeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Chrome Browser Tests(failed)">
+    <parameter name="environment" value="${environment}"/>
+    <parameter name="baseurl" value="${baseurl}"/>
+    <parameter name="browsername" value="Chrome"/>
+    <classes>
+      <class name="aa.aa1.WebTests.TestforTestContext">
+        <methods>
+          <include name="verifyHomePageElements"/>
+          <include name="afterCLass"/>
+          <include name="test3"/>
+          <include name="getgg"/>
+        </methods>
+      </class> <!-- aa.aa1.WebTests.TestforTestContext -->
+    </classes>
+  </test> <!-- Chrome Browser Tests(failed) -->
+</suite> <!-- Failed suite [Test Automation] -->
