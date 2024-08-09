@@ -43,7 +43,7 @@ public class TestHomePage4 extends TestBaseThreads {
 
 	homepage.navigateToHomePage()
 	.clickGmailLink();
-	loginpage.clickLoginButton();;
+	loginpage.clickLoginButton();;;
   
 	}
 
